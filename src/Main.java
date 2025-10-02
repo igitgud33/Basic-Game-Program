@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        Layla objLayla = new Layla(1500);
+        Layla objLayla = new Layla(2000);
         Balmond objBalmond = new Balmond(2000);
 
         objLayla.displayName();
@@ -40,6 +40,9 @@ public class Main {
             objBalmond.setHp(objBalmond.getHp() - damageL);
 
             System.out.println("----------------------------------");
+
+            objLayla.displayName();
+            objBalmond.displayName();
 
             round++;
         }
